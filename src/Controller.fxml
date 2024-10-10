@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <SubScene fx:id="subScene1" height="304.0" layoutX="44.0" layoutY="68.0" width="499.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+      <Button fx:id="Scale2X" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#clickedScale2" text="Scale 2X" />
+      <Button fx:id="ScaleHalf" layoutX="89.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#clickedScaleHalf" text="Scale .5X" />
+      <Button fx:id="GreenColor" layoutX="171.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#clickedGreenColor" text="Greeen Color" />
+      <Button fx:id="SepiaEfect" layoutX="269.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#clickedSepiaEffect" text="Sepia Efect" />
+      <Button fx:id="Save" layoutX="359.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#clickedSaveExit" text="Save And Exit" />
+      <Button fx:id="Exit" layoutX="466.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#clickedExit" text="Exit Withot Saving" />
+      <Label layoutX="181.0" layoutY="14.0" text="Click the Buttons to apply the effects!" />
+   </children>
+</AnchorPane>

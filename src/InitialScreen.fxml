@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InitialScreen">
+   <children>
+      <Button fx:id="tui" layoutX="445.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#clickedTui" prefHeight="26.0" prefWidth="36.0" text="TUI" />
+      <Button fx:id="gui" layoutX="445.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#guiButton" text="GUI" textFill="#250b0b" />
+      <Label layoutX="112.0" layoutY="117.0" prefHeight="26.0" prefWidth="289.0" text="Click This Button To Select Options From The Console" />
+      <TextField fx:id="filename" layoutX="225.0" layoutY="22.0" />
+      <Label layoutX="112.0" layoutY="21.0" prefHeight="26.0" prefWidth="86.0" text="Enter File Path:" />
+      <Label fx:id="wid" layoutX="245.0" layoutY="35.0" textFill="#ff0d00" />
+      <Label layoutX="112.0" layoutY="225.0" prefHeight="26.0" prefWidth="327.0" text="Click This Button To Open a Window With The Options" />
+   </children>
+</AnchorPane>
