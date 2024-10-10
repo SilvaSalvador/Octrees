@@ -45,46 +45,15 @@ Features
 *   **Interactive GUI**: Users can interact with the 3D scene, applying transformations (such as scaling) and visual effects (such as sepia and color removal).
     
 
-Code Overview
--------------
+### How It Works
 
-### Octree Structure
+-   The application loads objects from a text file. Objects include cylinders and boxes, which are organized in a hierarchical structure using **Octrees**.
+-   A **cylindrical camera view** is implemented, which determines the visibility of objects based on the camera's position and orientation.
+-   The **View Frustum Culling** algorithm uses Octrees to determine which objects are inside or outside the view frustum, improving performance.
+-   Users can apply various transformations, such as scaling objects up or down and changing colors.
 
-The core octree structure is implemented in the Otree class, where each node can be an empty node, a leaf node (containing an object), or an internal node (containing eight children). Here are some key methods:
-
-*   **constructTree**: Recursively constructs the octree from a list of 3D objects (boxes or cylinders).
-    
-*   **mapColorEffect**: Applies a color transformation to all objects in the octree.
-    
-*   **scaleOctree**: Recursively scales the octree and the objects it contains by a given factor.
-    
-
-### Camera View
-
-The camera view is controlled using the CameraTransformer class, which allows users to move and rotate the camera in 3D space. This class provides various transformations like translation, rotation, and scaling, making it easier to navigate through the 3D octree.
-
-### File I/O
-
-The OtreeIO object handles reading and writing the octree structure to and from files. The octree is serialized into a text format, which can later be loaded to restore the octree's state.
-
-### GUI Interaction
-
-The GUI is implemented in the Controller class and uses JavaFX to handle user input and display the 3D scene. The SubScene is used to display the octree and allows users to interact with buttons to scale, apply effects, or save the current state.
-
-Usage
------
-
-### Requirements
-
-*   Java 11 or higher
-    
-*   Scala
-    
-*   JavaFX libraries
-    
-
-### Running the Application
-
+Running the Application
+-----------------------
 1.  Clone the repository and navigate to the project folder.
     
 2.  Make sure JavaFX is properly set up in your IDE.
