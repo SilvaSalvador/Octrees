@@ -1,10 +1,10 @@
-Octree 3D Viewer
+Octree Cylinder Visualization
 =====================
 
 Introduction
 ------------
 
-This project was mainly focused on learning Scala, recursion, and how to manage and manipulate **octrees**. The graphical user interface (GUI) was not the main focus of the project, but it was implemented to help visualize the 3D structures. This project involves using a cylinder camera view to navigate and visualize **octrees**, which are represented as boxes.
+This project is a Scala-based graphical application that leverages Octrees to efficiently manage and render 3D objects loaded from a text file. The primary focus of the project is implementing View Frustum Culling using Octrees to optimize the rendering process. The project was developed to deepen the understanding of recursion, data structures, and functional programming in Scala.
 
 What Are Octrees?
 -----------------
@@ -39,15 +39,10 @@ The main goals of this project were:
 Features
 --------
 
-*   **Octree Construction**: The program constructs an octree from 3D objects such as boxes and cylinders, recursively dividing space until all objects are placed in the correct nodes.
-    
-*   **Color Effects**: Users can apply different color effects, such as Sepia or Green Removal, to the octree nodes for visualization.
-    
-*   **Scaling**: Users can scale the entire octree up or down by a factor of 2 or 0.5, respectively.
-    
-*   **Saving and Loading**: The program allows users to save the current octree state to a file and reload it later.
-    
-*   **GUI**: The GUI allows users to interact with the octree by scaling, applying effects, or saving the current state of the 3D view.
+*   **3D Model Visualization**: The application reads a text file containing geometric objects (such as boxes and cylinders) and visualizes them in a 3D space.  
+*   **Octree Implementation**: Objects are spatially subdivided using an Octree, which helps efficiently manage the rendering of objects in 3D.
+*   **View Frustum Culling**: The application employs a cylindrical camera to determine which parts of the 3D scene are visible, improving performance by avoiding the rendering of objects outside the camera's view.   
+*   **Interactive GUI**: Users can interact with the 3D scene, applying transformations (such as scaling) and visual effects (such as sepia and color removal).
     
 
 Code Overview
